@@ -1,0 +1,249 @@
+@import "mod.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    gap: 300px;
+    padding: 200px;
+    justify-content: center;
+    align-items: center;
+    min-height: $higeg100vh;
+    background-color: $bac_co;
+    flex-wrap: wrap;
+}
+
+.cube {
+    position: relative;
+    width: $width300;
+    height: $higeg300;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: boxx 4s linear infinite;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width;
+        height: $higeg;
+        transform-style: preserve-3d;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: $higeg;
+            background: linear-gradient(#151515, $box);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+    }
+
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background-color: $bac_co2;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background: $box;
+        transform: translateZ(-380px);
+        filter: blur(20px);
+    }
+}
+
+@keyframes boxx {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+// box2
+
+.cube2 {
+    position: relative;
+    width: $width300;
+    height: $higeg300;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: boxx2 4s linear infinite;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width;
+        height: $higeg;
+        transform-style: preserve-3d;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: $higeg;
+            background: linear-gradient(#151515, $box2);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+    }
+
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background-color: $bac_co2;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background: $box2;
+        transform: translateZ(-380px);
+        filter: blur(20px);
+    }
+}
+
+@keyframes boxx2 {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+// box3
+
+.cube3 {
+    position: relative;
+    width: $width300;
+    height: $higeg300;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: boxx 4s linear infinite;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width;
+        height: $higeg;
+        transform-style: preserve-3d;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: $higeg;
+            background: linear-gradient(#151515, $box3);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+    }
+
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background-color: $bac_co2;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background: $box3;
+        transform: translateZ(-380px);
+        filter: blur(20px);
+    }
+}
+
+@keyframes boxx {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube4 {
+    position: relative;
+    width: $width300;
+    height: $higeg300;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: boxx 4s linear infinite;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width;
+        height: $higeg;
+        transform-style: preserve-3d;
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: $higeg;
+            background: linear-gradient(#151515, $box4);
+            transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+        }
+    }
+
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background-color: $bac_co2;
+        transform: rotateX(90deg) translateZ(150px);
+    }
+    .top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $width300;
+        height: $higeg300;
+        background: $box4;
+        transform: translateZ(-380px);
+        filter: blur(20px);
+    }
+}
+
+@keyframes boxx {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
